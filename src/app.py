@@ -39,7 +39,7 @@ def sitemap():
 # EMPIEZAN LOS ENDPOINTS
 
 @app.route('/user', methods=['GET'])
-def handle_hello(): 
+def get_user(): 
 
     results = User.query.all()
     users_list = list(map(lambda item: item.serialize(),results))
