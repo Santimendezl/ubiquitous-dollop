@@ -191,7 +191,6 @@ def create_user():
     response_body = {
         "msg": "El usuario ha sido creado",
     }
-
     return jsonify(response_body), 200    
 
 # this only runs if `$ python src/app.py` is executed
